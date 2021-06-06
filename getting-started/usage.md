@@ -29,5 +29,5 @@ To read more advanced examples, visit the methods documentation:
 * [getHistoricalPrice](https://docs.redstone.finance/methods/gethistoricalprice)
 * [getAllPrices](https://docs.redstone.finance/methods/getallprices)
 
-You can also check out docs for the [redstone fluent interface](https://docs.redstone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler for most popular query use cases.
+You can also check out docs for the [redstone fluent interface](https://api.docs.redstone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler for most popular query use cases.
 

@@ -6,7 +6,7 @@ description: >-
 
 # Signature verification
 
-### Enable signature verification
+## Enable signature verification
 
 To enable signature verification you can set `verifySignature` option to `true` in `getPrice`, `getHistoricalPrice` or `getAllPrices` methods. If signature is invalid - error will be thrown.
 

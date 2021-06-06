@@ -6,9 +6,9 @@ description: >-
 
 # getPrice
 
-### Get the latest price for a single token
+## Get the latest price for a single token
 
-▸ **getPrice**\(`symbol`: _string_, `opts?`: GetPriceOptions\): _Promise&lt;_PriceData&gt;
+▸ **getPrice**\(`symbol`: _string_, `opts?`: GetPriceOptions\): \_Promise&lt;\_PriceData&gt;
 
 Returns the latest price for a single symbol
 
@@ -25,7 +25,7 @@ The latest price for the token
 
 Defined in: [redstone-api.ts:59](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L59)
 
-### Get the latest price for several tokens
+## Get the latest price for several tokens
 
 ▸ **getPrice**\(`symbols`: _string_\[\], `opts?`: GetPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -44,9 +44,9 @@ The latest price for the tokens
 
 Defined in: [redstone-api.ts:70](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L70)
 
-### Examples
+## Examples
 
-#### Get the latest price for a single token
+### Get the latest price for a single token
 
 ```javascript
 const price = await redstone.getPrice("AR");
@@ -56,10 +56,10 @@ console.log(price.timestamp); // the exact timestamp of the price
 ```
 
 {% hint style="info" %}
-All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](docs/ALL_SUPPORTED_TOKENS.md)
+All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR, EUR and any other of [ 100+ supported tokens](https://github.com/redstone-finance/redstone-api-docs/tree/0a80b22aeb2ddc6374e0a196198ce00137e6a714/methods/docs/ALL_SUPPORTED_TOKENS.md)
 {% endhint %}
 
-#### **Price data format** 
+### **Price data format**
 
 ```javascript
   {
@@ -71,7 +71,7 @@ All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR
   }
 ```
 
-####  Fetch price using promises
+### Fetch price using promises
 
 ```javascript
   // As async/await is only a syntactic sugar on Javascript
@@ -79,12 +79,11 @@ All the prices are denominated in USD. You can fetch price data for BTC, ETH, AR
   const price = redstone.getPrice("AR").then((price) => {
     console.log(price.value); // latest price value for AR token
   });
-
 ```
 
-#### Get the latest prices for several tokens
+### Get the latest prices for several tokens
 
-To fetch prices for several tokens use the `getPrice` method and pass an array with any subset of [supported tokens](docs/ALL_SUPPORTED_TOKENS.md).
+To fetch prices for several tokens use the `getPrice` method and pass an array with any subset of [supported tokens](https://github.com/redstone-finance/redstone-api-docs/tree/0a80b22aeb2ddc6374e0a196198ce00137e6a714/methods/docs/ALL_SUPPORTED_TOKENS.md).
 
 ```javascript
 const prices = await redstone.getPrice(["BTC", "ETH", "AR", "EUR"]);

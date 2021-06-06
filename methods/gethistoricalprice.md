@@ -7,7 +7,7 @@ description: >-
 
 # getHistoricalPrice
 
-### Get a single historical price for a single token
+## Get a single historical price for a single token
 
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceOptions\): _Promise_&lt;PriceData&gt;
 
@@ -28,7 +28,7 @@ The historical price for token
 
 Defined in: [redstone-api.ts:116](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L116)
 
-### Get historical price in a time range for a single token
+## Get historical price in a time range for a single token
 
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceForIntervalOptions\): _Promise_&lt;PriceData\[\]&gt;
 
@@ -49,7 +49,7 @@ The historical prices for the symbol with the passed interval
 
 Defined in: [redstone-api.ts:138](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L138)
 
-### Get a single historical price for several tokens
+## Get a single historical price for several tokens
 
 ▸ **getHistoricalPrice**\(`symbols`: _string_\[\], `opts`: GetHistoricalPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -68,9 +68,9 @@ The historical prices for several tokens
 
 Defined in: [redstone-api.ts:153](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L153)
 
-### Examples
+## Examples
 
-#### Get the historical price for a single token
+### Get the historical price for a single token
 
 To get the historical price use the `getHistoricalPrice` method.
 
@@ -86,7 +86,7 @@ console.log(price.value); // AR price for specific time
 The `date` argument must be convertable to Date type. You may pass date \(e.g. `new Date(2021-04-01)`\), timestamp \(e.g. `1617709771289`\), or just string \(e.g. `2021-04-01` or `2021-04-01T12:30:58`\)
 {% endhint %}
 
-#### Get the historical price for several tokens
+### Get the historical price for several tokens
 
 To fetch the historical price for several tokens pass an array of symbols to `getHistoricalPrice` method.
 
@@ -99,7 +99,7 @@ const prices = await redstone.getHistoricalPrice(symbols, {
 console.log(prices["BTC"].value); // BTC price for specific time
 ```
 
-#### Get the historical prices in a time range
+### Get the historical prices in a time range
 
 To fetch the historical prices in a time range specify token symbol as the first argument of the `getHistoricalPrice` method, and `startDate`, `endDate` and `interval` as fields of the second argument.
 

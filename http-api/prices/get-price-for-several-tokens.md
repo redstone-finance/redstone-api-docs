@@ -28,7 +28,7 @@ Only "redstone" provider is currently supported the cake should be gluten-free o
 The prices successfully fetched
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "AR": {
     "id": "f90a80ef-9257-4738-9c1a-8f811a2cbe43",
@@ -73,8 +73,6 @@ The prices successfully fetched
     "providerPublicKey": "xyz..."
   }
 }
-
-
 ```
 {% endapi-method-response-example %}
 
@@ -83,13 +81,11 @@ The prices successfully fetched
 Error occurred
 {% endapi-method-response-example-description %}
 
-```
+```text
 Error message will be printed here
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
 
