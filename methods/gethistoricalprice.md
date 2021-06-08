@@ -6,7 +6,7 @@ description: >-
 
 # getHistoricalPrice
 
-### Get a single historical price for a single token
+## Get a single historical price for a single token
 
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceOptions\): _Promise_&lt;PriceData&gt;
 
@@ -39,7 +39,7 @@ Returns the historical price for a single token
       <td style="text-align:left">
         <p>Optional params (object)</p>
         <ul>
-          <li><em>opts.date: </em>Date for the historical price</li>
+          <li><em>opts.date:</em> Date for the historical price</li>
           <li><em>opts.provider</em>: provider name (string) *</li>
           <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
         </ul>
@@ -52,9 +52,7 @@ Returns the historical price for a single token
 
 The historical price for token
 
-Defined in: [redstone-api.ts:116](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L116)
-
-### Get historical price in a time range for a single token
+## Get historical price in a time range for a single token
 
 ▸ **getHistoricalPrice**\(`symbol`: _string_, `opts`: GetHistoricalPriceForIntervalOptions\): _Promise_&lt;PriceData\[\]&gt;
 
@@ -87,12 +85,11 @@ Returns the historical prices for a token in a time range with the specified int
       <td style="text-align:left">
         <p>Options object. It must contain <em>startDate</em>, <em>endDate</em>, and <em>interval</em> properties.</p>
         <ul>
-          <li><em>opts.startDate: </em>Start time for the time range (date | timestamp
+          <li><em>opts.startDate:</em> Start time for the time range (date | timestamp
             | string)</li>
           <li><em>opts.endDate</em>: End time for the time range (date | timestamp |
-            string) <em> </em>
-          </li>
-          <li><em>opts.interval: Interval in milliseconds (number) </em>
+            string)</li>
+          <li><em>opts.interval: Interval in milliseconds (number)</em>
           </li>
           <li><em>opts.provider:</em> provider name (string)</li>
           <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
@@ -106,9 +103,7 @@ Returns the historical prices for a token in a time range with the specified int
 
 The historical prices for the symbol with the passed interval
 
-Defined in: [redstone-api.ts:138](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L138)
-
-### Get a single historical price for several tokens
+## Get a single historical price for several tokens
 
 ▸ **getHistoricalPrice**\(`symbols`: _string_\[\], `opts`: GetHistoricalPriceOptions\): _Promise_&lt;{ \[token: string\]: PriceData; }&gt;
 
@@ -138,8 +133,7 @@ Returns the historical prices for several tokens
       <td style="text-align:left">
         <p>Options object. It must contain the date property.</p>
         <ul>
-          <li><em>opts.date: </em>Date for the historical price (date | timestamp |
-            string)</li>
+          <li><em>opts.date:</em> Date for the historical price (date | timestamp | string)</li>
           <li><em>opts.provider</em>: provider name (string)</li>
           <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
         </ul>
@@ -152,11 +146,9 @@ Returns the historical prices for several tokens
 
 The historical prices for multiple tokens
 
-Defined in: [redstone-api.ts:153](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L153)
+## Examples
 
-### Examples
-
-#### Get the historical price for a single token
+### Get the historical price for a single token
 
 To get the historical price use the `getHistoricalPrice` method.
 
@@ -172,7 +164,7 @@ console.log(price.value); // AR price for specific time
 The `date` argument must be convertable to the Date type. You may pass a date \(e.g. `new Date(2021-04-01)`\), a timestamp \(e.g. `1617709771289`\), or just a string \(e.g. `2021-04-01` or `2021-04-01T12:30:58`\)
 {% endhint %}
 
-#### Get the historical price for several tokens
+### Get the historical price for several tokens
 
 To fetch the historical price for several tokens pass an array of symbols to `getHistoricalPrice` method.
 
@@ -185,7 +177,7 @@ const prices = await redstone.getHistoricalPrice(symbols, {
 console.log(prices["BTC"].value); // BTC price for specific time
 ```
 
-#### Get the historical prices in a time range
+### Get the historical prices in a time range
 
 To fetch the historical prices in a time range specify token symbol as the first argument of the `getHistoricalPrice` method, and `startDate`, `endDate` and `interval` as fields of the second argument.
 

@@ -33,9 +33,9 @@ console.log(price.timestamp); // the exact timestamp of the price
 
 See more examples in the documentation of the following methods:
 
-* [getPrice](https://docs.redstone.finance/methods/getprice)
-* [getHistoricalPrice](https://docs.redstone.finance/methods/gethistoricalprice)
-* [getAllPrices](https://docs.redstone.finance/methods/getallprices)
+* [getPrice](../methods/getprice.md)
+* [getHistoricalPrice](../methods/gethistoricalprice.md)
+* [getAllPrices](../methods/getallprices.md)
 
-You can also check out docs for the [redstone fluent interface](https://docs.redstone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler thanks to human readable syntax.
+You can also check out docs for the [redstone fluent interface](../fluent-interface/build-a-query/), which makes the price fetching even simpler thanks to human readable syntax.
 

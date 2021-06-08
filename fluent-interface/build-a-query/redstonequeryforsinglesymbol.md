@@ -35,7 +35,7 @@
 
 #### constructor
 
-+ **new RedstoneQueryForSingleSymbol**\(`params`: QueryParams\): [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
+* **new RedstoneQueryForSingleSymbol**\(`params`: QueryParams\): [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
 
 **Parameters:**
 
@@ -47,8 +47,6 @@
 
 Overrides: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:102](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L102)
-
 ### Properties
 
 #### params
@@ -56,8 +54,6 @@ Defined in: [redstone-query.ts:102](https://github.com/redstone-finance/redstone
 • `Protected` **params**: QueryParams
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md).[params](redstonequeryforsingleorseveralsymbols.md#params)
-
-Defined in: [redstone-query.ts:58](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L58)
 
 ### Methods
 
@@ -79,8 +75,6 @@ query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:97](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L97)
-
 #### forLastDays
 
 ▸ **forLastDays**\(`daysCount`: _number_\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
@@ -96,8 +90,6 @@ Configures query to fetch the price for the last few days
 **Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 query object
-
-Defined in: [redstone-query.ts:154](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L154)
 
 #### forLastHours
 
@@ -115,8 +107,6 @@ Configures query to fetch the price for the last few hours
 
 query object
 
-Defined in: [redstone-query.ts:139](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L139)
-
 #### fromDate
 
 ▸ **fromDate**\(`date`: ConvertableToDate\): [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
@@ -132,8 +122,6 @@ Configures query to fetch the price in a time range. It is important to use from
 **Returns:** [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
 
 query object
-
-Defined in: [redstone-query.ts:113](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L113)
 
 #### getExecutableQuery
 
@@ -155,8 +143,6 @@ Defined in: [redstone-query.ts:113](https://github.com/redstone-finance/redstone
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:65](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L65)
-
 #### hoursAgo
 
 ▸ **hoursAgo**\(`hoursCount`: _number_\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
@@ -175,8 +161,6 @@ query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:86](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L86)
-
 #### latest
 
 ▸ **latest**\(\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
@@ -188,8 +172,6 @@ Configures query to fetch the latest price/prices It doesn't support any params
 query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
-
-Defined in: [redstone-query.ts:77](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L77)
 
 #### toDate
 
@@ -206,6 +188,4 @@ Configures query to fetch the price in a time range. toDate method should go aft
 **Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 query object
-
-Defined in: [redstone-query.ts:126](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L126)
 

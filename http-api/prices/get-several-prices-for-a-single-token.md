@@ -40,7 +40,7 @@ Interval in milliseconds
 Token prices successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "id": "aba0cf4d-cc26-446f-9096-37fedfab6854",
@@ -81,7 +81,7 @@ Token prices successfully retrieved.
 Error occurred while fetching the prices
 {% endapi-method-response-example-description %}
 
-```
+```text
 Error message will be printed here
 ```
 {% endapi-method-response-example %}
@@ -89,9 +89,9 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Examples
+## Examples
 
-#### Get the historical prices for AR token
+### Get the historical prices for AR token
 
 ```bash
 curl "https://api.redstone.finance/prices?symbol=AR&provider=redstone&fromTimestamp=1619546099466&toTimestamp=1619547041149&interval=1"

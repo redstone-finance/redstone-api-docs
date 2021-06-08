@@ -32,7 +32,7 @@ Limit of prices
 Price successfully fetched
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
   {
     "id": "11dba94e-1b1b-4c0e-ba5f-fbd6e6170cb9",
@@ -57,7 +57,7 @@ Price successfully fetched
 Error occurred while fetching the price
 {% endapi-method-response-example-description %}
 
-```
+```text
 Error message will be printed here
 ```
 {% endapi-method-response-example %}
@@ -65,21 +65,21 @@ Error message will be printed here
 {% endapi-method-spec %}
 {% endapi-method %}
 
-### Examples
+## Examples
 
-#### Get the latest price for AR token
+### Get the latest price for AR token
 
 ```bash
 curl "https://api.redstone.finance/prices?symbol=AR&provider=redstone&limit=1"
 ```
 
-#### Get the latest price for BTC token
+### Get the latest price for BTC token
 
 ```bash
 curl "https://api.redstone.finance/prices?symbol=BTC&provider=redstone&limit=1"
 ```
 
-#### Get the latest 100 prices for AR token
+### Get the latest 100 prices for AR token
 
 ```bash
 curl "https://api.redstone.finance/prices?symbol=AR&provider=redstone&limit=100"

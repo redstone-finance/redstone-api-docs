@@ -6,11 +6,9 @@ description: >-
 
 # Prices
 
-### Learn more
+## Learn more
 
 * [Get price for a single token](get-price-for-a-single-token.md)
 * [Get several prices for a single token](get-several-prices-for-a-single-token.md)
 * [Get price for several tokens](get-price-for-several-tokens.md)
-
-
 

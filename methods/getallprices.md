@@ -6,7 +6,7 @@ description: >-
 
 # getAllPrices
 
-### Get the latest price for all tokens
+## Get the latest price for all tokens
 
 ▸ **getAllPrices**\(`opts?`: GetPriceOptions\): _Promise_&lt;{ \[symbol: string\]: PriceData; }&gt;
 
@@ -32,7 +32,7 @@ Returns the latest price for all the supported symbols
       <td style="text-align:left">
         <p>An optional options object.</p>
         <ul>
-          <li><em>opts.provider: </em>provider name (string)</li>
+          <li><em>opts.provider:</em> provider name (string)</li>
           <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
         </ul>
       </td>
@@ -44,11 +44,9 @@ Returns the latest price for all the supported symbols
 
 The latest price for all the supported tokens
 
-Defined in: [redstone-api.ts:202](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L202)
+## Examples
 
-### Examples
-
-#### Get prices for all available tokens
+### Get prices for all available tokens
 
 To fetch the latest prices for all available tokens use the `getAllPrices` method.
 

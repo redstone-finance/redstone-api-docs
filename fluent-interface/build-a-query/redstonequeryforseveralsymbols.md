@@ -31,7 +31,7 @@
 
 #### constructor
 
-+ **new RedstoneQueryForSeveralSymbols**\(`params`: QueryParams\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
+* **new RedstoneQueryForSeveralSymbols**\(`params`: QueryParams\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 **Parameters:**
 
@@ -43,8 +43,6 @@
 
 Overrides: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:166](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L166)
-
 ### Properties
 
 #### params
@@ -52,8 +50,6 @@ Defined in: [redstone-query.ts:166](https://github.com/redstone-finance/redstone
 • `Protected` **params**: QueryParams
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md).[params](redstonequeryforsingleorseveralsymbols.md#params)
-
-Defined in: [redstone-query.ts:58](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L58)
 
 ### Methods
 
@@ -75,8 +71,6 @@ query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
-Defined in: [redstone-query.ts:97](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L97)
-
 #### getExecutableQuery
 
 ▸ `Protected`**getExecutableQuery**\(`update`: _any_\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
@@ -96,8 +90,6 @@ Defined in: [redstone-query.ts:97](https://github.com/redstone-finance/redstone-
 **Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
-
-Defined in: [redstone-query.ts:65](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L65)
 
 #### hoursAgo
 
@@ -130,6 +122,4 @@ Configures query to fetch the latest price/prices It doesn't support any params
 query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
-
-Defined in: [redstone-query.ts:77](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L77)
 

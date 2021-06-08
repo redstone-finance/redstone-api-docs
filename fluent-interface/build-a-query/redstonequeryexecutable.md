@@ -28,7 +28,7 @@
 
 #### constructor
 
-+ **new RedstoneQueryExecutable**\(`params?`: {}\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
+* **new RedstoneQueryExecutable**\(`params?`: {}\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 **Type parameters:**
 
@@ -44,15 +44,11 @@
 
 **Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
-Defined in: [redstone-query.ts:173](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L173)
-
 ### Properties
 
 #### params
 
 • `Private` **params**: QueryParams
-
-Defined in: [redstone-query.ts:173](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L173)
 
 ### Methods
 
@@ -65,6 +61,4 @@ Executes the query
 **Returns:** _Promise_
 
 Promise resolving the query result \(result type depends on the query\)
-
-Defined in: [redstone-query.ts:187](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L187)
 

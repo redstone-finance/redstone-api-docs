@@ -24,7 +24,7 @@
 
 #### constructor
 
-+ **new RedstoneQuery**\(`params?`: {}\): [_RedstoneQuery_](redstonequery.md)
+* **new RedstoneQuery**\(`params?`: {}\): [_RedstoneQuery_](redstonequery.md)
 
 **Parameters:**
 
@@ -34,15 +34,11 @@
 
 **Returns:** [_RedstoneQuery_](redstonequery.md)
 
-Defined in: [redstone-query.ts:15](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L15)
-
 ### Properties
 
 #### params
 
 • `Protected` **params**: QueryParams
-
-Defined in: [redstone-query.ts:15](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L15)
 
 ### Methods
 
@@ -55,8 +51,6 @@ Configures query to fetch prices for all supported tokens. It doesn't support an
 **Returns:** [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 query object
-
-Defined in: [redstone-query.ts:49](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L49)
 
 #### symbol
 
@@ -74,8 +68,6 @@ Sets a token symbol to fetch
 
 query object
 
-Defined in: [redstone-query.ts:29](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L29)
-
 #### symbols
 
 ▸ **symbols**\(`symbols`: _string_\[\]\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
@@ -91,6 +83,4 @@ Sets token symbols to fetch
 **Returns:** [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 query object
-
-Defined in: [redstone-query.ts:40](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L40)
 
