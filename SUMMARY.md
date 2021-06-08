@@ -40,4 +40,6 @@
 
 * [Github repo](https://github.com/redstone-finance/redstone-api)
 * [NPM](https://www.npmjs.com/package/redstone-api)
+* [Website](https://redstone.finance)
+* [Discord](https://discord.gg/2uwppEN4fM)
 
