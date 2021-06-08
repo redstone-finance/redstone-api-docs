@@ -1,18 +1,18 @@
 ---
 description: >-
-  Redstone query is a special construction exported by redstone api. It makes
-  it easier to execute queries for popular use cases.
+  Redstone query is an extra interface exported by the Redstone API. It uses a
+  human readable syntax to facilitate query creation.
 ---
 
 # Redstone query
 
 ## Fluent interface for redstone
 
-Redstone API supports a fluent interface to make the price fetching even simpler.
+Redstone API supports a fluent interface to simplify the syntax.
 
 ### Importing
 
-To use the fluent interface you should import the redstone-api in a standard way and initialise a query calling `redstone.query()`;
+To use the fluent interface you should first import the redstone-api in a standard way
 
 ```javascript
 // Using Node.js `require()`
@@ -27,7 +27,7 @@ import redstone from 'redstone-api';
 All redstone queries consist of 4 parts:
 
 * Query initialisation \(`redstone.query()`\)
-* What to fetch \(`symbol` or `symbols`\)
+* What to fetch \(`symbol,` `symbols` or `allSymbols`\)  
 * For which date/dates \(`latest`, `atDate`, `forLastHours`, `hoursAgo`, `fromDate`, `toDate`\)
 * Query execution \(`exec`\)
 

@@ -1,67 +1,70 @@
-[redstone-api](../README.md) / [Exports](../modules.md) / RedstoneQueryExecutable
+# RedstoneQueryExecutable
 
-# Class: RedstoneQueryExecutable<QueryResultType\>
+[redstone-api](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/README.md) / [Exports](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/modules.md) / RedstoneQueryExecutable
 
-## Type parameters
+## Class: RedstoneQueryExecutable
+
+### Type parameters
 
 | Name |
-| :------ |
+| :--- |
 | `QueryResultType` |
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](redstonequeryexecutable.md#constructor)
+
+#### Properties
+
+* [params](redstonequeryexecutable.md#params)
+
+#### Methods
+
+* [exec](redstonequeryexecutable.md#exec)
 
 ### Constructors
 
-- [constructor](redstonequeryexecutable.md#constructor)
+#### constructor
 
-### Properties
++ **new RedstoneQueryExecutable**\(`params?`: {}\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
-- [params](redstonequeryexecutable.md#params)
-
-### Methods
-
-- [exec](redstonequeryexecutable.md#exec)
-
-## Constructors
-
-### constructor
-
-\+ **new RedstoneQueryExecutable**<QueryResultType\>(`params?`: {}): [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<QueryResultType\>
-
-#### Type parameters:
+**Type parameters:**
 
 | Name |
-| :------ |
+| :--- |
 | `QueryResultType` |
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Default value |
-| :------ | :------ | :------ |
-| `params` | *object* | {} |
+| :--- | :--- | :--- |
+| `params` | _object_ | {} |
 
-**Returns:** [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<QueryResultType\>
+**Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 Defined in: [redstone-query.ts:173](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L173)
 
-## Properties
+### Properties
 
-### params
+#### params
 
 • `Private` **params**: QueryParams
 
 Defined in: [redstone-query.ts:173](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L173)
 
-## Methods
+### Methods
 
-### exec
+#### exec
 
-▸ **exec**(): *Promise*<QueryResultType\>
+▸ **exec**\(\): _Promise_
 
 Executes the query
 
-**Returns:** *Promise*<QueryResultType\>
+**Returns:** _Promise_
 
-Promise resolving the query result (result type depends on the query)
+Promise resolving the query result \(result type depends on the query\)
 
 Defined in: [redstone-query.ts:187](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L187)
+

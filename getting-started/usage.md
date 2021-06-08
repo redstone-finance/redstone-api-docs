@@ -4,15 +4,23 @@ description: Redstone api usage
 
 # Usage
 
-Firstly, you need to import redstone module
+First, you need to import redstone module
 
+{% tabs %}
+{% tab title="Node.js require" %}
 ```javascript
 // Using Node.js `require()`
 const redstone = require('redstone-api');
+```
+{% endtab %}
 
+{% tab title="ES6 import" %}
+```javascript
 // Using ES6 imports
 import redstone from 'redstone-api';
 ```
+{% endtab %}
+{% endtabs %}
 
 Then you can fetch the prices with just a single line of code
 
@@ -23,11 +31,11 @@ console.log(price.value); // latest price value for AR token (in USD)
 console.log(price.timestamp); // the exact timestamp of the price
 ```
 
-To read more advanced examples, visit the methods documentation:
+See more examples in the documentation of the following methods:
 
-* [getPrice](../methods/getprice.md)
-* [getHistoricalPrice](../methods/gethistoricalprice.md)
-* [getAllPrices](../methods/getallprices.md)
+* [getPrice](https://docs.redstone.finance/methods/getprice)
+* [getHistoricalPrice](https://docs.redstone.finance/methods/gethistoricalprice)
+* [getAllPrices](https://docs.redstone.finance/methods/getallprices)
 
-You can also check out docs for the [redstone fluent interface](../fluent-interface/build-a-query.md), which makes the price fetching even simpler for most popular query use cases.
+You can also check out docs for the [redstone fluent interface](https://docs.redstone.finance/fluent-interface/build-a-query), which makes the price fetching even simpler thanks to human readable syntax.
 

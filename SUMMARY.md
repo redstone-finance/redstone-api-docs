@@ -16,7 +16,12 @@
 
 ## Fluent interface
 
-* [Redstone query](fluent-interface/build-a-query.md)
+* [Redstone query](fluent-interface/build-a-query/README.md)
+  * [RedstoneQuery](fluent-interface/build-a-query/redstonequery.md)
+  * [RedstoneQueryForSeveralSymbols](fluent-interface/build-a-query/redstonequeryforseveralsymbols.md)
+  * [RedstoneQueryForSingleSymbol](fluent-interface/build-a-query/redstonequeryforsinglesymbol.md)
+  * [RedstoneQueryForSingleOrSeveralSymbols](fluent-interface/build-a-query/redstonequeryforsingleorseveralsymbols.md)
+  * [RedstoneQueryExecutable](fluent-interface/build-a-query/redstonequeryexecutable.md)
 
 ## HTTP API
 
@@ -29,6 +34,7 @@
 
 * [Cache layer](definitions/cache-layer.md)
 * [Signature verification](definitions/signature-verification.md)
+* [Provider](definitions/provider.md)
 
 ## Links
 

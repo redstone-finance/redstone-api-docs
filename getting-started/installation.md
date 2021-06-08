@@ -4,7 +4,7 @@ description: Redstone api installation
 
 # Installation
 
-Redstone api is published in **npm**, so you can install it using npm or **yarn** cli tool.
+You can install it using a **npm** or a **yarn** cli tool:
 
 {% tabs %}
 {% tab title="npm" %}

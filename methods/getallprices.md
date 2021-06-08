@@ -1,12 +1,12 @@
 ---
 description: >-
-  getAllPrices method can be used to fetch the latest price for all available
-  tokens
+  getAllPrices method can be used to fetch the latest price for all the
+  available tokens
 ---
 
 # getAllPrices
 
-## Get the latest price for all tokens
+### Get the latest price for all tokens
 
 ▸ **getAllPrices**\(`opts?`: GetPriceOptions\): _Promise_&lt;{ \[symbol: string\]: PriceData; }&gt;
 
@@ -14,9 +14,31 @@ Returns the latest price for all the supported symbols
 
 **Parameters:**
 
-| Name | Type | Default value | Description |
-| :--- | :--- | :--- | :--- |
-| `opts` | GetPriceOptions | {} | Optioanl options object.  _opts.provider: provider name \(string\)_  opts.verifySignature: enable signature verification \(boolean\) |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Type</th>
+      <th style="text-align:left">Default value</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>opts</code>
+      </td>
+      <td style="text-align:left">GetPriceOptions</td>
+      <td style="text-align:left">{}</td>
+      <td style="text-align:left">
+        <p>An optional options object.</p>
+        <ul>
+          <li><em>opts.provider: </em>provider name (string)</li>
+          <li><em>opts.verifySignature</em>: enable signature verification (boolean)</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 **Returns:** _Promise_&lt;{ \[symbol: string\]: PriceData; }&gt;
 
@@ -24,9 +46,9 @@ The latest price for all the supported tokens
 
 Defined in: [redstone-api.ts:202](https://github.com/redstone-finance/redstone-api/blob/6ba5e3a/src/redstone-api.ts#L202)
 
-## Examples
+### Examples
 
-### Get prices for all available tokens
+#### Get prices for all available tokens
 
 To fetch the latest prices for all available tokens use the `getAllPrices` method.
 

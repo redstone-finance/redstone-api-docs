@@ -1,51 +1,53 @@
-[redstone-api](../README.md) / [Exports](../modules.md) / RedstoneQueryForSeveralSymbols
+# RedstoneQueryForSeveralSymbols
 
-# Class: RedstoneQueryForSeveralSymbols
+[redstone-api](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/README.md) / [Exports](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/modules.md) / RedstoneQueryForSeveralSymbols
 
-## Hierarchy
+## Class: RedstoneQueryForSeveralSymbols
 
-* [*RedstoneQueryForSingleOrSeveralSymbols*](redstonequeryforsingleorseveralsymbols.md)<{ [symbol: string]: PriceData;  }\>
+### Hierarchy
+
+* [_RedstoneQueryForSingleOrSeveralSymbols_](redstonequeryforsingleorseveralsymbols.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
   ↳ **RedstoneQueryForSeveralSymbols**
 
-## Table of contents
+### Table of contents
+
+#### Constructors
+
+* [constructor](redstonequeryforseveralsymbols.md#constructor)
+
+#### Properties
+
+* [params](redstonequeryforseveralsymbols.md#params)
+
+#### Methods
+
+* [atDate](redstonequeryforseveralsymbols.md#atdate)
+* [getExecutableQuery](redstonequeryforseveralsymbols.md#getexecutablequery)
+* [hoursAgo](redstonequeryforseveralsymbols.md#hoursago)
+* [latest](redstonequeryforseveralsymbols.md#latest)
 
 ### Constructors
 
-- [constructor](redstonequeryforseveralsymbols.md#constructor)
+#### constructor
 
-### Properties
++ **new RedstoneQueryForSeveralSymbols**\(`params`: QueryParams\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
-- [params](redstonequeryforseveralsymbols.md#params)
-
-### Methods
-
-- [atDate](redstonequeryforseveralsymbols.md#atdate)
-- [getExecutableQuery](redstonequeryforseveralsymbols.md#getexecutablequery)
-- [hoursAgo](redstonequeryforseveralsymbols.md#hoursago)
-- [latest](redstonequeryforseveralsymbols.md#latest)
-
-## Constructors
-
-### constructor
-
-\+ **new RedstoneQueryForSeveralSymbols**(`params`: QueryParams): [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
-
-#### Parameters:
+**Parameters:**
 
 | Name | Type |
-| :------ | :------ |
+| :--- | :--- |
 | `params` | QueryParams |
 
-**Returns:** [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
+**Returns:** [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 Overrides: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
 Defined in: [redstone-query.ts:166](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L166)
 
-## Properties
+### Properties
 
-### params
+#### params
 
 • `Protected` **params**: QueryParams
 
@@ -53,21 +55,21 @@ Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleo
 
 Defined in: [redstone-query.ts:58](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L58)
 
-## Methods
+### Methods
 
-### atDate
+#### atDate
 
-▸ **atDate**(`date`: ConvertableToDate): [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+▸ **atDate**\(`date`: ConvertableToDate\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
 Configures query to fetch the price for a specific date.
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `date` | ConvertableToDate | Date for the historical price (date \| timestamp \| string) |
+| :--- | :--- | :--- |
+| `date` | ConvertableToDate | Date for the historical price \(date \| timestamp \| string\) |
 
-**Returns:** [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+**Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
 query object
 
@@ -75,45 +77,41 @@ Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleo
 
 Defined in: [redstone-query.ts:97](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L97)
 
-___
+#### getExecutableQuery
 
-### getExecutableQuery
+▸ `Protected`**getExecutableQuery**\(`update`: _any_\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
-▸ `Protected`**getExecutableQuery**<T\>(`update`: *any*): [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<T\>
-
-#### Type parameters:
+**Type parameters:**
 
 | Name |
-| :------ |
+| :--- |
 | `T` |
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type |
-| :------ | :------ |
-| `update` | *any* |
+| :--- | :--- |
+| `update` | _any_ |
 
-**Returns:** [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<T\>
+**Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
 Defined in: [redstone-query.ts:65](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L65)
 
-___
+#### hoursAgo
 
-### hoursAgo
-
-▸ **hoursAgo**(`hoursCount`: *number*): [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+▸ **hoursAgo**\(`hoursCount`: _number_\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
 Configures query to fetch the price for X hours ago.
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `hoursCount` | *number* | Number of hours ago |
+| :--- | :--- | :--- |
+| `hoursCount` | _number_ | Number of hours ago |
 
-**Returns:** [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+**Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
 query object
 
@@ -121,19 +119,17 @@ Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleo
 
 Defined in: [redstone-query.ts:86](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L86)
 
-___
+#### latest
 
-### latest
+▸ **latest**\(\): [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
-▸ **latest**(): [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+Configures query to fetch the latest price/prices It doesn't support any params
 
-Configures query to fetch the latest price/prices
-It doesn't support any params
-
-**Returns:** [*RedstoneQueryExecutable*](redstonequeryexecutable.md)<{ [symbol: string]: PriceData;  }\>
+**Returns:** [_RedstoneQueryExecutable_](redstonequeryexecutable.md)&lt;{ \[symbol: string\]: PriceData; }&gt;
 
 query object
 
 Inherited from: [RedstoneQueryForSingleOrSeveralSymbols](redstonequeryforsingleorseveralsymbols.md)
 
 Defined in: [redstone-query.ts:77](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L77)
+

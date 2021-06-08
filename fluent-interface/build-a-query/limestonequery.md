@@ -1,98 +1,96 @@
-[redstone-api](../README.md) / [Exports](../modules.md) / RedstoneQuery
+# RedstoneQuery
 
-# Class: RedstoneQuery
+[redstone-api](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/README.md) / [Exports](https://github.com/redstone-finance/redstone-docs/tree/e56f4e97ffe8229804276eb19e84c082fe4e179e/fluent-interface/modules.md) / RedstoneQuery
 
-## Table of contents
+## Class: RedstoneQuery
+
+### Table of contents
+
+#### Constructors
+
+* [constructor](redstonequery.md#constructor)
+
+#### Properties
+
+* [params](redstonequery.md#params)
+
+#### Methods
+
+* [allSymbols](redstonequery.md#allsymbols)
+* [symbol](redstonequery.md#symbol)
+* [symbols](redstonequery.md#symbols)
 
 ### Constructors
 
-- [constructor](redstonequery.md#constructor)
+#### constructor
 
-### Properties
++ **new RedstoneQuery**\(`params?`: {}\): [_RedstoneQuery_](redstonequery.md)
 
-- [params](redstonequery.md#params)
-
-### Methods
-
-- [allSymbols](redstonequery.md#allsymbols)
-- [symbol](redstonequery.md#symbol)
-- [symbols](redstonequery.md#symbols)
-
-## Constructors
-
-### constructor
-
-\+ **new RedstoneQuery**(`params?`: {}): [*RedstoneQuery*](redstonequery.md)
-
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Default value |
-| :------ | :------ | :------ |
-| `params` | *object* | {} |
+| :--- | :--- | :--- |
+| `params` | _object_ | {} |
 
-**Returns:** [*RedstoneQuery*](redstonequery.md)
+**Returns:** [_RedstoneQuery_](redstonequery.md)
 
 Defined in: [redstone-query.ts:15](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L15)
 
-## Properties
+### Properties
 
-### params
+#### params
 
 • `Protected` **params**: QueryParams
 
 Defined in: [redstone-query.ts:15](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L15)
 
-## Methods
+### Methods
 
-### allSymbols
+#### allSymbols
 
-▸ **allSymbols**(): [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
+▸ **allSymbols**\(\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
-Configures query to fetch prices for all supported tokens.
-It doesn't support any params
+Configures query to fetch prices for all supported tokens. It doesn't support any params
 
-**Returns:** [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
+**Returns:** [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 query object
 
 Defined in: [redstone-query.ts:49](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L49)
 
-___
+#### symbol
 
-### symbol
-
-▸ **symbol**(`symbol`: *string*): [*RedstoneQueryForSingleSymbol*](redstonequeryforsinglesymbol.md)
+▸ **symbol**\(`symbol`: _string_\): [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
 
 Sets a token symbol to fetch
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `symbol` | *string* | Token symbol string |
+| :--- | :--- | :--- |
+| `symbol` | _string_ | Token symbol string |
 
-**Returns:** [*RedstoneQueryForSingleSymbol*](redstonequeryforsinglesymbol.md)
+**Returns:** [_RedstoneQueryForSingleSymbol_](redstonequeryforsinglesymbol.md)
 
 query object
 
 Defined in: [redstone-query.ts:29](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L29)
 
-___
+#### symbols
 
-### symbols
-
-▸ **symbols**(`symbols`: *string*[]): [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
+▸ **symbols**\(`symbols`: _string_\[\]\): [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 Sets token symbols to fetch
 
-#### Parameters:
+**Parameters:**
 
 | Name | Type | Description |
-| :------ | :------ | :------ |
-| `symbols` | *string*[] | Array of strings (token symbols) |
+| :--- | :--- | :--- |
+| `symbols` | _string_\[\] | Array of strings \(token symbols\) |
 
-**Returns:** [*RedstoneQueryForSeveralSymbols*](redstonequeryforseveralsymbols.md)
+**Returns:** [_RedstoneQueryForSeveralSymbols_](redstonequeryforseveralsymbols.md)
 
 query object
 
 Defined in: [redstone-query.ts:40](https://github.com/redstone-finance/redstone-api/blob/3d4422c/src/redstone-query.ts#L40)
+
