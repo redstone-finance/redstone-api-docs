@@ -1,4 +1,4 @@
-# Get price for several tokens
+# Get the latest price for several tokens
 
 {% api-method method="get" host="https://api.redstone.finance" path="/prices" %}
 {% api-method-summary %}

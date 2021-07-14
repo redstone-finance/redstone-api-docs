@@ -7,6 +7,8 @@ description: >-
 
 # Provider
 
+You can see the list of available providers with details in [our web app](https://app.redstone.finance/#/app/providers). Providers' data is loading directly from Blockchain, so it may take up to 10 seconds 😉
+
 Each provider has
 
 * name

@@ -1,4 +1,4 @@
-# Get price for a single token
+# Get the latest price\(s\) for a single token
 
 {% api-method method="get" host="https://api.redstone.finance" path="/prices" %}
 {% api-method-summary %}
@@ -17,7 +17,7 @@ Token symbol
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="provider" type="string" required=true %}
-Only "redstone" provider is currently supported
+We recommend to use "redstone" provider. Learn more
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="number" required=false %}

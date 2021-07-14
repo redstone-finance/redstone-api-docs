@@ -1,4 +1,4 @@
-# Get several prices for a single token
+# Get historical price\(s\) for a single token
 
 {% api-method method="get" host="https://api.redstone.finance" path="/prices" %}
 {% api-method-summary %}
@@ -12,6 +12,10 @@ Get several prices for a single token
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-query-parameters %}
+{% api-method-parameter name="limit" type="number" required=false %}
+Limit of prices
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="symbol" type="string" required=true %}
 Token symbol
 {% endapi-method-parameter %}
@@ -90,6 +94,14 @@ Error message will be printed here
 {% endapi-method %}
 
 ## Examples
+
+### Get  single historical price for ETH token at specified time
+
+Example for timestamp: `1621108871711` `(2021-05-15T20:01:11.711Z)`
+
+```bash
+curl "https://api.redstone.finance/prices?symbol=AR&provider=redstone&toTimestamp=1621108871711&limit=1"
+```
 
 ### Get the historical prices for AR token
 
