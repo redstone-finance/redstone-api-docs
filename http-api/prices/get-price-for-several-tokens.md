@@ -1,5 +1,8 @@
 # Get the latest price for several tokens
 
+* [List of all supported tokens](https://github.com/redstone-finance/redstone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
+* [Available providers](../../definitions/provider.md)
+
 {% api-method method="get" host="https://api.redstone.finance" path="/prices" %}
 {% api-method-summary %}
 Get price for several tokens
