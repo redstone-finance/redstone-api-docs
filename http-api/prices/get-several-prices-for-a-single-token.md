@@ -98,7 +98,7 @@ Error message will be printed here
 
 ## Examples
 
-### Get  single historical price for ETH token at specified time
+### Get  single historical price for AR token at specified time
 
 Example for timestamp: `1621108871711` `(2021-05-15T20:01:11.711Z)`
 
