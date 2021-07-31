@@ -4,7 +4,7 @@ description: >-
   allows you to fetch prices data.
 ---
 
-# Prices
+# Prices HTTP Api
 
 Base url: [`https://api.redstone.finance`](https://api.redstone.finance/prices)
 

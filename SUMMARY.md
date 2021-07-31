@@ -25,7 +25,7 @@
 
 ## HTTP API
 
-* [Prices](http-api/prices/README.md)
+* [Prices HTTP Api](http-api/prices/README.md)
   * [Get the latest price\(s\) for a single token](http-api/prices/get-price-for-a-single-token.md)
   * [Get historical price\(s\) for a single token](http-api/prices/get-several-prices-for-a-single-token.md)
   * [Get the latest price for several tokens](http-api/prices/get-price-for-several-tokens.md)

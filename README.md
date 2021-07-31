@@ -14,7 +14,7 @@ Redstone pricing data is secured on the [Arweave](https://www.arweave.org/) chai
 
 You don't need any API keys. Just install the npm package and add a single line of code.
 
-### ✓ 100+ tokens
+### ✓ 900+ tokens
 
 We support BTC, ETH, AR, EUR, and many other crypto and fiat currencies. [All supported tokens](https://github.com/redstone-finance/redstone-api/blob/main/docs/ALL_SUPPORTED_TOKENS.md)
 
